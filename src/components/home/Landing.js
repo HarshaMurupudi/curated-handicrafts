@@ -13,7 +13,7 @@ function Landing() {
             <a href="/"><span>Shop Now</span></a>
           </div>
         </div>
-        <img className="order-0 order-md-1 col-12 col-md-7" src={LandingImg} alt="women weaving" />
+        <img className="img-fluid order-0 order-md-1 col-12 col-md-7" src={LandingImg} alt="women weaving" />
 
       </div>
 
