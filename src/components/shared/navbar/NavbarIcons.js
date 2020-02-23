@@ -23,7 +23,7 @@ class NavbarIcons extends Component {
   }
   render() {
     return (
-      <div id="icon-wrapper">
+      <div id="icon-wrapper" className="mr-5">
         {
           this.state.icons.map((item) => {
             return (
@@ -31,7 +31,7 @@ class NavbarIcons extends Component {
                 href={item.path}
                 key={item.id}
                 target="_blank"
-                ref='noopener noreferrer'
+                rel="noopener noreferrer"
               >
                 {item.icon}
               </a>
