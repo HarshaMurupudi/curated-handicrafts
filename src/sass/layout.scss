@@ -4,8 +4,14 @@
 @import "./navbar";
 @import "./landing";
 @import "./aboutSection";
+@import "./instagram";
+@import "./reviews";
 
 body {
   font-family: $font-stack;
   color: $primary-color;
+}
+
+.images {
+  height: 100vh;
 }

@@ -21,9 +21,9 @@ function Landing() {
         <div className="col-12 col-md-5"><h1>Handpicked Handlooms</h1></div>
         <form className="col-12 col-md-7 d-block d-md-flex" action="post">
           <div class="order-1 d-inline col-12 col-md-8 floating-form">
-            <input class="floating-input" type="text" placeholder=" " id="email" name="email" aria-describedby="email" />
+            <input className="floating-input" type="text" placeholder=" " id="email" name="email" aria-describedby="email" />
             <span class="highlight"></span>
-            <label for="email">Email Address</label>
+            <label htmlFor="email">Email Address</label>
           </div>
           <div className="order-2 col-12 col-md-4 shop-btn">
             <a href="/"><span>Sign up</span></a>

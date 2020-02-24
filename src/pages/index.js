@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Landing from "../components/home/Landing";
 import AboutUs from '../components/home/AboutUs';
+import Instagram from '../components/home/Instagram';
+import Review from '../components/home/Reviews';
 
 const IndexPage = () => (
   <Layout>
@@ -11,6 +13,12 @@ const IndexPage = () => (
       <Landing />
     </div>
     <AboutUs />
+    <div className="images">
+      <Instagram />
+      <Review />
+    </div>
+
+
   </Layout >
 )
 
