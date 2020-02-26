@@ -5,6 +5,7 @@ import Landing from "../components/home/Landing";
 import AboutUs from '../components/home/AboutUs';
 import Instagram from '../components/home/Instagram';
 import Review from '../components/home/Reviews';
+import ContactUs from '../components/home/ContactUs';
 
 const IndexPage = () => (
   <Layout>
@@ -17,9 +18,10 @@ const IndexPage = () => (
       <Instagram />
       <Review />
     </div>
-
-
-  </Layout >
+    <div className="container">
+      <ContactUs />
+    </div>
+  </Layout>
 )
 
 export default IndexPage

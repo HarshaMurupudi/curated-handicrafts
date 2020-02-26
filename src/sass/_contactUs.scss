@@ -1,0 +1,47 @@
+#contact-us-section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  h2 {
+    font-family: karla, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 100px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  h4 {
+    margin-bottom: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgb(27, 27, 27);
+    font-size: 20px;
+  }
+  p:first-of-type {
+    font-weight: 400;
+    overflow: break-word;
+    letter-spacing: normal;
+    font-size: 18px;
+  }
+  div:first-of-type {
+    margin-bottom: 40px;
+  }
+}
+
+#dot-com {
+  margin-top: 24px;
+}
+
+#email-ph-info {
+  display: grid;
+  color: rgb(94, 125, 116);
+  font-size: 14px !important;
+  margin-bottom: 24px;
+}
+
+.whatsapp-btn {
+  padding: 8px 16px;
+  background-color: rgb(69, 90, 100);
+  a {
+    margin-bottom: 24px;
+  }
+}
