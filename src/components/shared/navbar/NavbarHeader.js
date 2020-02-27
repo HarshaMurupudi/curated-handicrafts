@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from 'gatsby';
-import logoImg from "../../../images/logo.webp";
+import logoWebp from "../../../images/logo.webp";
+import logopng from "../../../images/logo.png";
 import { FaAlignRight } from 'react-icons/fa';
 
 class NavbarHeader extends Component {
@@ -9,7 +10,11 @@ class NavbarHeader extends Component {
     return (
       <div id="header-wrapper">
         <Link to="">
-          <img src={logoImg} alt="company name" />
+          <picture>
+            <source srcSet={logoWebp} type="image/webp" />
+            <source srcSet={logopng} type="image/png" />
+            <img src={logopng} alt="company name" />
+          </picture>
         </Link>
         <FaAlignRight
           className="toggle-icon"

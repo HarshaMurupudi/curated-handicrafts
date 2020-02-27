@@ -1,5 +1,7 @@
 import React from "react";
-import LandingImg from '../../images/landing-women.webp';
+import landingWebp from '../../images/landing-women.webp';
+// import landingPng from '../../images/landing-women.png';
+import landingJpg from '../../images/landing-women.jpg';
 
 function Landing() {
   return (
@@ -13,7 +15,11 @@ function Landing() {
             <a href="/"><span>Shop Now</span></a>
           </div>
         </div>
-        <img className="img-fluid order-0 order-md-1 col-12 col-md-7" src={LandingImg} alt="women weaving" />
+        <picture>
+          <source srcSet={landingWebp} type="image/webp" />
+          <source srcSet={landingJpg} type="image/jpeg" />
+          <img className="img-fluid order-0 order-md-1 col-12 col-md-7" src={landingJpg} alt="women weaving" />
+        </picture>
 
       </div>
 

@@ -1,5 +1,7 @@
 import React from 'react';
-import aboutUsImg from '../../images/img-aboutus.webp';
+import aboutUsWebp from '../../images/img-aboutus.webp';
+// import aboutUsPng from '../../images/img-aboutus.png';
+import aboutUsJpg from '../../images/img-aboutus.jpg';
 
 function AboutUs() {
   return (
@@ -19,7 +21,11 @@ function AboutUs() {
           <p>&nbsp;While shopping with us for handlooms and handmade products, we want you to be completely happy with the experience. If you have questions about us, our products, or even shipping, get in touch! We hope you continue to shop with us for many years to come.</p>
         </div>
       </div>
-      <img src={aboutUsImg} alt="weaving" className="col-12 col-md-6" />
+      <picture>
+        <source srcSet={aboutUsWebp} type="image/webp" />
+        <source srcSet={aboutUsJpg} type="image/jpeg" />
+        <img src={aboutUsJpg} alt="weaving" className="col-12 col-md-6" />
+      </picture>
     </section>
   )
 }
