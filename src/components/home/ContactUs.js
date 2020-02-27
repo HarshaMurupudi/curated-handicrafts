@@ -20,10 +20,16 @@ function ContactUs() {
         </p>
       </div>
 
-      <div>
+      <div className="operation-hours d-flex flex-column justify-content-center align-items-center">
         <h4>Hours</h4>
         <div>
-
+          <table>
+            <tr><th>Sunday</th><td>Closed</td></tr>
+            <tr><th>Monday</th><td>9am - 5pm</td></tr>
+            <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
+            <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
+            <tr><th>Thursday</th><td>9am - 5pm</td></tr>
+          </table>
         </div>
       </div>
     </section>
