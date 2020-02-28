@@ -15,7 +15,7 @@ function Landing() {
             <a href="/"><span>Shop Now</span></a>
           </div>
         </div>
-        <picture>
+        <picture className="img-fluid order-0 order-md-1 col-12 col-md-7">
           <source srcSet={landingWebp} type="image/webp" />
           <source srcSet={landingJpg} type="image/jpeg" />
           <img className="img-fluid order-0 order-md-1 col-12 col-md-7" src={landingJpg} alt="women weaving" />
