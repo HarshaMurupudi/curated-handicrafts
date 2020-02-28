@@ -1,4 +1,3 @@
-
 import React from "react";
 
 function ContactUs() {
@@ -24,11 +23,13 @@ function ContactUs() {
         <h4>Hours</h4>
         <div>
           <table>
-            <tr><th>Sunday</th><td>Closed</td></tr>
-            <tr><th>Monday</th><td>9am - 5pm</td></tr>
-            <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
-            <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
-            <tr><th>Thursday</th><td>9am - 5pm</td></tr>
+            <tr><th>Mon</th><td>09:00 am - 05:00 pm</td></tr>
+            <tr><th>Tue</th><td>09:00 am - 05:00 pm</td></tr>
+            <tr><th>Wed</th><td>09:00 am - 05:00 pm</td></tr>
+            <tr><th>Thu</th><td>09:00 am - 05:00 pm</td></tr>
+            <tr><th>Fri</th><td>09:00 am - 05:00 pm</td></tr>
+            <tr><th>Sat</th><td>09:00 am - 05:00 pm</td></tr>
+            <tr><th>Sun</th><td>09:00 am - 05:00 pm</td></tr>
           </table>
         </div>
       </div>
