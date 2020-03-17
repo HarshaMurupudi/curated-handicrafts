@@ -1,9 +1,13 @@
 import React from "react";
+import { graphql } from "gatsby";
 import landingWebp from '../../images/landing-women.webp';
 // import landingPng from '../../images/landing-women.png';
 import landingJpg from '../../images/landing-women.jpg';
+// import Img from "gatsby-image"
+import Image from '../shared/Image';
 
-function Landing() {
+const Landing = ({ data }) => {
+  console.log(data)
   return (
     <section id="landing" className="d-flex flex-column justify-content-around">
       <div className="order-0 row mb-5 mb-md-0">
@@ -15,18 +19,14 @@ function Landing() {
             <a href="/"><span>Shop Now</span></a>
           </div>
         </div>
-        <picture className="img-fluid order-0 order-md-1 col-12 col-md-7">
-          <source srcSet={landingWebp} type="image/webp" />
-          <source srcSet={landingJpg} type="image/jpeg" />
-          <img className="img-fluid order-0 order-md-1 col-12 col-md-7" src={landingJpg} alt="women weaving" />
-        </picture>
 
+        <Image />
       </div>
 
       <div id="landing-form" className="row d-flex order-1">
         <div className="col-12 col-md-5"><h1>Handpicked Handlooms</h1></div>
         <form className="col-12 col-md-7 d-block d-md-flex" action="post">
-          <div class="order-1 d-inline col-12 col-md-8 floating-form">
+          <div className="order-1 d-inline col-12 col-md-8 floating-form">
             <input className="floating-input" type="text" placeholder=" " id="email" name="email" aria-describedby="email" />
             <span class="highlight"></span>
             <label htmlFor="email">Email Address</label>
@@ -37,9 +37,20 @@ function Landing() {
         </form>
 
       </div>
-    </section >
+    </section>
   )
-
 }
 
 export default Landing;
+
+export const pageQuery = graphql`
+  query LandingQuery {
+    img: file(relativePath: {eq: "landing-women.jpg"}){
+      childImageSharp{
+        fluid{
+          src
+        }
+      }
+    }
+  }
+`;

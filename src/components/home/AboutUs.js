@@ -5,7 +5,7 @@ import aboutUsJpg from '../../images/img-aboutus.jpg';
 
 function AboutUs() {
   return (
-    <section id="about-section" className="row">
+    <section id="about-section" className="row mx-0">
       <div className="col-12 col-md-6 padded-text">
         <h2>About Us</h2>
         <div className="note">
@@ -24,7 +24,7 @@ function AboutUs() {
       <picture>
         <source srcSet={aboutUsWebp} type="image/webp" />
         <source srcSet={aboutUsJpg} type="image/jpeg" />
-        <img src={aboutUsJpg} alt="weaving" className="col-12 col-md-6" />
+        <img src={aboutUsJpg} alt="weaving" className="col-12 col-md-6 px-0" />
       </picture>
     </section>
   )
