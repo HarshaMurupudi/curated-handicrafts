@@ -42,15 +42,3 @@ const Landing = ({ data }) => {
 }
 
 export default Landing;
-
-export const pageQuery = graphql`
-  query LandingQuery {
-    img: file(relativePath: {eq: "landing-women.jpg"}){
-      childImageSharp{
-        fluid{
-          src
-        }
-      }
-    }
-  }
-`;
