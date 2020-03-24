@@ -1,12 +1,35 @@
-import React from "react";
-import { graphql } from "gatsby";
-import landingWebp from '../../images/landing-women.webp';
+import React, { useState } from "react";
+// import landingWebp from '../../images/landing-women.webp';
 // import landingPng from '../../images/landing-women.png';
-import landingJpg from '../../images/landing-women.jpg';
+// import landingJpg from '../../images/landing-women.jpg';
 // import Img from "gatsby-image"
 import Image from '../shared/Image';
 
+
+
+
 const Landing = ({ data }) => {
+  const [status, setStatus] = useState('')
+
+  const submitForm = (ev) => {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        setStatus("SUCCESS");
+      } else {
+        setStatus("ERROR");
+      }
+    };
+    xhr.send(data);
+  }
+
   console.log(data)
   return (
     <section id="landing" className="d-flex flex-column justify-content-around">
@@ -23,17 +46,25 @@ const Landing = ({ data }) => {
         <Image />
       </div>
 
-      <div id="landing-form" className="row d-flex order-1">
-        <div className="col-12 col-md-5"><h1>Handpicked Handlooms</h1></div>
-        <form className="col-12 col-md-7 d-block d-md-flex" action="post">
+      <div id="landing-form" className="row d-flex  d-md-flex align-items-end order-1">
+        <h1 className="col-12 col-md-5 mb-0">Handpicked Handlooms</h1>
+        <form
+          onSubmit={submitForm}
+          className="col-12 col-md-7 d-block d-md-flex align-items-baseline"
+          action="https://formspree.io/mqklwklp"
+          method="post"
+        >
           <div className="order-1 d-inline col-12 col-md-8 floating-form">
             <input className="floating-input" type="text" placeholder=" " id="email" name="email" aria-describedby="email" />
             <span class="highlight"></span>
             <label htmlFor="email">Email Address</label>
           </div>
           <div className="order-2 col-12 col-md-4 shop-btn">
-            <a href="/"><span>Sign up</span></a>
+            {status === "SUCCESS" ? <p>Thanks!</p> : <input type="submit" value="Send" />}
+            {status === "ERROR" && <p>Ooops! There was an error.</p>}
           </div>
+
+
         </form>
 
       </div>
@@ -42,3 +73,5 @@ const Landing = ({ data }) => {
 }
 
 export default Landing;
+
+            // <a href="/"><span>Sign up</span></a>
