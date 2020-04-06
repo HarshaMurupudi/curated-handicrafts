@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import NavbarHeader from './NavbarHeader';
 import NavbarIcons from './NavbarIcons';
 import NavbarLinks from './NavbarLinks';
+import { FaCartArrowDown } from 'react-icons/fa';
+
 
 class Navbar extends Component {
   state = {
@@ -17,7 +19,10 @@ class Navbar extends Component {
     return (
       <nav id="nav-wrapper">
         <NavbarHeader handleNavbar={this.handleNavbar} />
-        <NavbarLinks navbarOpen={this.state.navbarOpen} />
+        <div className="d-flex">
+          <NavbarLinks navbarOpen={this.state.navbarOpen} />
+          <FaCartArrowDown className='cart-icon snipcart-checkout' />
+        </div>
         <NavbarIcons />
       </nav>
     )

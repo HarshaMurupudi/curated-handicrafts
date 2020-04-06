@@ -7,6 +7,7 @@ import AboutUs from '../components/home/AboutUs';
 import Instagram from '../components/home/Instagram';
 import Review from '../components/home/Reviews';
 import ContactUs from '../components/home/ContactUs';
+import Products from '../components/home/Products';
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -19,6 +20,7 @@ const IndexPage = ({ data }) => (
       <Instagram />
       <Review />
     </div>
+    <Products />
     <div className="container">
       <ContactUs />
     </div>

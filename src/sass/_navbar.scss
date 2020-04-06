@@ -2,6 +2,7 @@
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -67,6 +68,12 @@
 
 .link-wrapper-open {
   height: 152px;
+}
+
+.cart-icon {
+  cursor: pointer;
+  color: $mainYellow;
+  font-size: 2rem;
 }
 
 #icon-wrapper {
