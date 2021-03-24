@@ -15,9 +15,9 @@ function ContactUs() {
         <a className="whatsapp-btn text-white">Message us on WhatsApp</a>
         <h4 id="dot-com">Curatedhandicrafts.com</h4>
         <p id="email-ph-info">
-          <a>info.curatedhandicrafts@gmail.com</a>
-          <a>+91 9390377029</a>
-          <a>+91 7006458635</a>
+          <a>xxxxxxxx@gmail.com</a>
+          <a>+91 xxxxxxxxx</a>
+          <a>+91 xxxxxxxxx</a>
         </p>
       </div>
 

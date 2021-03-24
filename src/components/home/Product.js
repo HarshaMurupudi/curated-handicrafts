@@ -15,12 +15,7 @@ function Product({ product }) {
           <h6>{product.title}</h6>
           <h6>&#8377;{product.price}</h6>
           <button
-            className="btn btn-outline-warning mt-3 text-capitalize snipcart-add-item"
-            data-item-id={product.id}
-            data-item-name={product.title}
-            data-item-price={product.price}
-            data-itme-image={product.image.fluid.src}
-            data-item-url="https://www.curatedhandicrafts.com/"
+            className="btn btn-outline-warning mt-3 text-capitalize"
           >
             add to cart
           </button>

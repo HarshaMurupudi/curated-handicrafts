@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <section id="footer-section" className="text-center">
-      <p>Copyright © 2020 Curatedhandicrafts.com - All Rights Reserved.</p>
+      <p>Copyright © xxxx</p>
       <hr></hr>
     </section>
   )
